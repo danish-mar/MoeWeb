@@ -1,0 +1,13 @@
+appId: com.keqing.moeweb
+productName: MoeWeb
+directories:
+  output: dist
+  buildResources: build
+files:
+  - filter:
+    - package.json
+    - main.js
+    - renderer.js
+    - preload.js
+    - index.html
+    - styles.css

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoeWeb Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="titlebar">
+            <div class="window-controls">
+                <div class="window-control close"></div>
+                <div class="window-control minimize"></div>
+                <div class="window-control maximize"></div>
+            </div>
+        </div>
+        
+        <div id="browser">
+            <div id="tab-bar">
+                <div id="tabs-container">
+                    <div class="tab active" data-tab-id="1">
+                        <span class="tab-title">New Tab</span>
+                        <span class="tab-close">&times;</span>
+                    </div>
+                    <div class="tab-add">+</div>
+                </div>
+            </div>
+            
+            <div id="toolbar">
+                <div class="navigation-controls">
+                    <button class="nav-btn back">&larr;</button>
+                    <button class="nav-btn forward">&rarr;</button>
+                    <button class="nav-btn refresh">&#x21bb;</button>
+                </div>
+                
+                <div class="url-container">
+                    <input type="text" class="url-bar" placeholder="Search or enter web address">
+                </div>
+                
+                <div class="additional-controls">
+                    <button class="nav-btn bookmarks">★</button>
+                    <button class="nav-btn menu">≡</button>
+                </div>
+            </div>
+            
+            <div id="webview-container">
+                <webview src="about:blank" class="tab-webview active" data-tab-id="1"></webview>
+            </div>
+        </div>
+    </div>
+    
+    <script src="renderer.js"></script>
+</body>
+</html>

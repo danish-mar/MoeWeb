@@ -1,0 +1,22 @@
+{
+    "theme": {
+        "mode": "light",
+        "accent": "purple",
+        "colors": {
+            "light": {
+                "primary": "#f8f9fa",
+                "secondary": "#ffffff",
+                "accent": "#6a5acd",
+                "text": "#333"
+            },
+            "dark": {
+                "primary": "#121212",
+                "secondary": "#1e1e1e",
+                "accent": "#8a63d2",
+                "text": "#e0e0e0"
+            }
+        }
+    },
+    "bookmarks": [],
+    "history": []
+}

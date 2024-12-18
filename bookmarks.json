@@ -1,0 +1,16 @@
+{
+    "bookmarks": [
+        {
+            "id": 1,
+            "title": "Google",
+            "url": "https://www.google.com",
+            "category": "Search"
+        },
+        {
+            "id": 2, 
+            "title": "GitHub",
+            "url": "https://www.github.com",
+            "category": "Development"
+        }
+    ]
+}
