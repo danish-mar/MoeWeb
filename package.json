@@ -2,6 +2,16 @@
   "name": "moeweb",
   "version": "1.0.0",
   "main": "main.js",
+  "author": {
+    "name": "Denizuh",
+    "email": "danishs2007@gmail.com",
+    "url": "https://github.com/danish-mar"
+  },
+  "homepage": "https://github.com/danish-mar/moeweb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danish-mar/moeweb.git"
+  },
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
@@ -41,6 +51,7 @@
       ]
     },
     "linux": {
+      "maintainer": "Denizuh danishs2007@gmail.com",
       "target": [
         "AppImage",
         "deb",
@@ -49,6 +60,13 @@
       ],
       "category": "Utility"
     },
+    "keywords": [
+    "electron",
+    "web-browser",
+    "anime",
+    "browser"
+    ],
+    "license": "MIT",
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
