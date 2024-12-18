@@ -3,11 +3,55 @@ productName: MoeWeb
 directories:
   output: dist
   buildResources: build
+
 files:
-  - filter:
-    - package.json
-    - main.js
-    - renderer.js
-    - preload.js
-    - index.html
-    - styles.css
+  - '**/*'
+  - '!**/*.ts'
+  - '!*.code-workspace'
+  - '!LICENSE.md'
+  - '!package.json'
+  - '!package-lock.json'
+  - '!src/'
+  - '!e2e/'
+  - '!hooks/'
+  - '!.angular-cli.json'
+  - '!_config.yml'
+  - '!karma.conf.js'
+  - '!tsconfig.json'
+  - '!tslint.json'
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+
+linux:
+  maintainer: Denizuh <danishs2007@gmail.com>
+  target:
+    - AppImage
+    - deb
+    - rpm
+    - snap
+  category: Utility
+
+mac:
+  target:
+    - dmg
+    - zip
+  category: public.app-category.utilities
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+
+publish:
+  provider: github
+  releaseType: release

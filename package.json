@@ -1,6 +1,7 @@
 {
   "name": "moeweb",
   "version": "1.0.0",
+  "description": "Anime-inspired Electron Web Browser",
   "main": "main.js",
   "author": {
     "name": "Denizuh",
@@ -24,46 +25,6 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "release": "electron-builder --publish always"
-  },
-  "build": {
-    "appId": "com.keqing.moeweb",
-    "productName": "MoeWeb",
-    "files": [
-      "**/*",
-      "!**/*.ts",
-      "!*.code-workspace",
-      "!LICENSE.md",
-      "!package.json",
-      "!package-lock.json",
-      "!src/",
-      "!e2e/",
-      "!hooks/",
-      "!.angular-cli.json",
-      "!_config.yml",
-      "!karma.conf.js",
-      "!tsconfig.json",
-      "!tslint.json"
-    ],
-    "win": {
-      "target": [
-        "nsis",
-        "portable"
-      ]
-    },
-    "linux": {
-      "maintainer": "Denizuh danishs2007@gmail.com",
-      "target": [
-        "AppImage",
-        "deb",
-        "rpm",
-        "snap"
-      ],
-      "category": "Utility"
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
-    }
   },
   "devDependencies": {
     "electron": "^33.2.1",
