@@ -12,6 +12,13 @@
     "type": "git",
     "url": "https://github.com/danish-mar/moeweb.git"
   },
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "web-browser",
+    "anime",
+    "browser"
+  ],
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
@@ -37,13 +44,6 @@
       "!tsconfig.json",
       "!tslint.json"
     ],
-    "mac": {
-      "category": "public.app-category.utilities",
-      "target": [
-        "dmg",
-        "zip"
-      ]
-    },
     "win": {
       "target": [
         "nsis",
@@ -60,13 +60,6 @@
       ],
       "category": "Utility"
     },
-    "keywords": [
-    "electron",
-    "web-browser",
-    "anime",
-    "browser"
-    ],
-    "license": "MIT",
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
